@@ -1383,6 +1383,10 @@ body.locked {
     font-size: 12px;
 }
 
+.footer a {
+  color: #00A3FF;
+}
+
 .footer__reserved {
   font-size: 12px;
 }
