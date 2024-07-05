@@ -1056,6 +1056,7 @@ body.locked {
 
 .footnote {
   display: flex;
+  color: #fff;
   font-size: 11px;
   padding-top: 30px;
   padding-right: 30px;
@@ -1745,7 +1746,9 @@ body.locked {
         padding: 50px 0
     } */
   .footnote {
-    font-size: 13px;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-right: 40px;
   }
 }
 
@@ -1758,7 +1761,7 @@ body.locked {
   }
   .footnote {
     font-size: 14px;
-    padding-top: 35px;
+    padding-top: 10px;
     padding-right: 35px;
   }
 
@@ -1963,8 +1966,8 @@ body.locked {
 
   .footnote {
     font-size: 15px;
-    padding-top: 40px;
-    padding-right: 40px;
+    padding-top: 10px;
+    padding-right: 70px;
   }
 }
 
@@ -2148,8 +2151,8 @@ body.locked {
 
   .footnote {
     font-size: 20px;
-    padding-top: 45px;
-    padding-right: 45px;
+    padding-top: 10px;
+    padding-right: 85px;
   }
 }
 
@@ -2161,8 +2164,8 @@ body.locked {
 
   .footnote {
     font-size: 22px;
-    padding-top: 50px;
-    padding-right: 48px;
+    padding-top: 10px;
+    padding-right: 85px;
   }
 
   .looking__box {
