@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="stylesheet" href="css/form.css"> -->
+	<link rel="icon" sizes="48x48" href="img/favicon/favicon-3.png" type="image/png">
+	<link rel="icon" sizes="32x32" href="img/favicon/favicon-2.png" type="image/png">
+	<link rel="icon" sizes="16x16" href="img/favicon/favicon-1.png" type="image/png">
+	<title>Boosteroid Spotlight Challenge</title>
+</head>
+
+<body>
+	<div class="circle"></div>
+	<div class="blur"></div>
+	<div class="wrapper">
+		<header class="header">
+			<nav id="navigation" class="header__nav">
+				<div class="header__navbar">
+					<div class="header__navigation">
+						<a class="header__logo" href="../">
+							<img src="img/logo.svg" alt="boosteroid logo">
+							<img src="img/logo_mini.svg" width="49" height="30" alt="boosteroid logo mini">
+						</a>
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="https://boosteroid.com/downloads/"
+									class="header__item-link header__item-link--md i18nelement"
+									data-i18n="link.ourapp">downloads</a>
+								<a href="https://boosteroid.com/downloads/"
+									class="header__item-link header__item-link--sm i18nelement"
+									data-i18n="link.ourapp">our app</a>
+							</li>
+							<li class="header__item">
+								<a href="https://boosteroid.com/faq/" class="header__item-link i18nelement"
+									data-i18n="link.faq">faq</a>
+							</li>
+							<li class="header__item">
+								<a href="https://help.boosteroid.com/en/" class="header__item-link i18nelement"
+									data-i18n="link.helpcenter">Help center</a>
+							</li>
+							<li class="header__item">
+								<a href="https://boosteroid.com/blog/" class="header__item-link i18nelement"
+									data-i18n="link.blog">Blog</a>
+							</li>
+						</ul>
+
+						<div class="header__languages">
+							<span class="close-lang "></span>
+							<p class="i18nelement" data-i18n="link.select">Select Your Language</p>
+							<a class="header__languages-btn" href="#" data-lang="en">
+								<svg>
+									<use href="img/sprites/sprite.svg#united_kingdom"></use>
+								</svg>
+								<span>English</span>
+							</a>
+							<a class="header__languages-btn" href="#" data-lang="es">
+								<svg>
+									<use href="img/sprites/sprite.svg#spain"></use>
+								</svg>
+								<span>Español</span>
+							</a>
+							<a class="header__languages-btn" href="#" data-lang="ua">
+								<svg>
+									<use href="img/sprites/sprite.svg#ukraine"></use>
+								</svg>
+								<span>Українська</span>
+							</a>
+							<a class="header__languages-btn" href="#" data-lang="ro">
+								<svg>
+									<use href="img/sprites/sprite.svg#romania"></use>
+								</svg>
+								<span>Română</span>
+							</a>
+						</div>
+
+						<span class="lang-overlay"></span>
+
+					</div>
+					<div class="header__buttons">
+						<!-- <button class="header__buttons-lang">
+							<svg class="i18nelement" data-i18n="global.svg_use">
+								<use href="img/sprites/sprite.svg#united_kingdom"></use>
+							</svg>
+							<span class="i18nelement" data-i18n="global.button_lang">English</span>
+						</button> -->
+						<a href="https://cloud.boosteroid.com" class="header__buttons-login second-btn i18nelement"
+							data-i18n="link.login">Sign In</a>
+					</div>
+					<!-- <div class="burger">
+						<span></span>
+					</div> -->
+				</div>
+			</nav>
+		</header>
+
+		<main class="partner-body">
+			<section class="become">
+				<div class="container">
+					<div class="become__container">
+						<div class="become__box title-effect title-effect-off">
+							<h1 class="partner-page-title">Boosteroid <br> Spotlight Challenge</h1>
+							<p class="become__txt">Win a weekend at GAMESCOM 2024 by playing games!</p>
+							<div class="become__btns">
+								<a class="become__btns-part basic-button" href="#interested">Learn more</a>
+								<!-- <a class="become__btns-more" href="#looking">Learn more</a> -->
+							</div>
+						</div>
+						<div class="become__image">
+							<picture>
+								<source srcset="img/banner.webp" type="image/webp"><img src="img/banner.webp"
+									alt="banner image with game characters">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="youget">
+				<div class="container">
+					<h2 class="youget__title partner-page-subtitle js-scroll fade-in-down">How to take part</h2>
+					<div class="youget__cards">
+						<div class="youget__card">
+							<svg>
+								<use href="#freePart"></use>
+							</svg>
+							<div class="youget__desc">
+								<p>Choose</p>
+								<p>a challenge</p>
+							</div>
+						</div>
+						<div class="youget__card">
+							<svg>
+								<use href="#accessPart"></use>
+							</svg>
+							<div class="youget__desc">
+								<p>Record</p>
+								<p>your gameplay</p>
+							</div>
+						</div>
+						<div class="youget__card">
+							<svg>
+								<use href="#extraPart"></use>
+							</svg>
+							<div class="youget__desc">
+								<p>Submit</p>
+								<p>your application</p>
+							</div>
+						</div>
+
+					</div>
+					<p class="footnote">*Detailed rules below</p>
+				</div>
+			</section>
+			<section class="looking" id="looking">
+				<div class="container">
+					<h2 class="looking__title partner-page-subtitle js-scroll fade-in-down">What are the prizes?</h2>
+					<!-- <p class="looking__txt js-scroll">The winner of each challenge will get a chance to choose
+						3 games to their taste from this list - one from each category</p> -->
+
+					<div class="looking__box">
+						<picture>
+							<img class="looking__box-image" src="img/ver.png" alt="prizes image">
+							<img class="looking__box-image-big" src="img/hor.png" alt="prizes image">
+							<!-- <source srcset="img/hor.webp" type="image/webp">
+							<img class="looking__box-image" src="img/hor.png"
+								alt="content image" /> -->
+						</picture>
+					</div>
+				</div>
+			</section>
+			<!-- <section class="readon">
+				<div class="container">
+					<h2 class="readon__title partner-page-subtitle js-scroll fade-in-down">What are the challenges?
+					</h2>
+					<p class="readon__txt js-scroll">Flip the cards to read the tasks</p>
+
+					<h4 class="readon__subtitle partner-page-subtitle js-scroll fade-in-down">ROCKET LEAGUE</h4>
+					<div class="card-container">
+						<div class="card card1">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-1-img.png" alt="Demo Derby Challenge Image" width="100%">
+									<p class="challenge__card-title">#1 Demo Derby Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Demolish two opponents within 45 seconds from the
+										start of the round. </p>
+									<p class="challenge__card-description">Seek out opponents and strategically demolish
+										them to disrupt their gameplay.
+									</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#demo_derby_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card card2">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-2-img.png" alt="Flick Mastery Challenge Image" width="100%">
+									<p class="challenge__card-title">#2 Flick Mastery Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Score a goal with a flick shot within 45 seconds
+										from the start of the round. </p>
+									<p class="challenge__card-description">Master the timing and mechanics of flick
+										shots to deceive the defenders.</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#flick_mastery_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card card3">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-3-img.png" alt="Pinch Shot Challenge Image" width="100%">
+									<p class="challenge__card-title">#3 Pinch Shot Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Score a goal by executing a pinch shot with another
+										player within 45 seconds from the start of the round. </p>
+									<p class="challenge__card-description">Time your hit precisely for a powerful shot.
+									</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#pinch_shot_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h4 class="readon__subtitle partner-page-subtitle js-scroll fade-in-down">FALL GUYS</h4>
+
+					<div class="card-container">
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-4-img.png" alt="Hurdle Jump Challenge Image" width="100%">
+									<p class="challenge__card-title">#4 Hurdle Jump Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Complete the race level, and jump over the rotating
+										barrier 10 times. </p>
+									<p class="challenge__card-description">A little bean should take a fitness class.
+									</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#hurdle_jump_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-5-img.png" alt="Free Hugs Challenge Image" width="100%">
+									<p class="challenge__card-title">#5 Free Hugs Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">On any map grab 15 players in 1 round. </p>
+									<p class="challenge__card-description">Show your love to other players.</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#free_hugs_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-6-img.png" alt="Perfect Hex-A-Gone Challenge Image" width="100%">
+									<p class="challenge__card-title">#6 Perfect Hex-A-Gone Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Stay on the Hex-A-Gone level until you pass it. </p>
+									<p class="challenge__card-description">Maintain your footing and outlast all
+										opponents.</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#perfect_hexagone_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4 class="readon__subtitle partner-page-subtitle js-scroll fade-in-down">FORTNITE</h4>
+
+					<div class="card-container">
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-7-img.png" alt="Loot-N-Shoot Challenge Image" width="100%">
+									<p class="challenge__card-title">#7 Loot-N-Shoot Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Land in a named location, loot, and eliminate an
+										opponent within 2 minutes.</p>
+									<p class="challenge__card-description">Showcase your efficiency in looting and
+										combat.</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#loot_n_shoot_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-8-img.png" alt="Friendly Neighbor Challenge Image" width="100%">
+									<p class="challenge__card-title">#8 Friendly Neighbor Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task: </p>
+									<p class="challenge__card-task">Use SpiderMan's web shooters to stay in the air for
+										30 seconds. </p>
+									<p class="challenge__card-description">Spider web, spider web. Does whatever a
+										spider can!</p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#friendly_neighbor_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-inner">
+								<div class="card-front">
+									<img src="img/competition-page/card-9-img.png" alt="Last Danc Challenge Image" width="100%">
+									<p class="challenge__card-title">#9 Last Dance Challenge</p>
+								</div>
+								<div class="card-back">
+									<p class="challenge__card-header">Your task:</p>
+									<p class="challenge__card-task">Emote for 15 seconds with fewer than 5 people left
+										and don't get killed.</p>
+									<p class="challenge__card-description"> I`ll dance dance dance, with my hands hands
+										hands… </p>
+									<p class="challenge__card-hashtags">Hashtags to use in the video description: <br>
+										<em>#boosteroid, #boosteroid_ugc, #boosteroidchallenge,
+											#last_dance_challenge</em>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="readon__accordion">
+						<div class="readon__box">
+							<h3 class="readon__box-title">How does this all work?</h3>
+							<ul class="readon__box-list">
+								<li class="readon__box-item">
+									We provide free access to the platform for you as long as you keep releasing videos
+									(or other content) about Boosteroid. Follow the <a
+										href="https://cloud.boosteroid.com/auth/register" target="_blank">link</a> right
+									now to create your account.
+								</li>
+								<li class="readon__box-item">
+									<span>NOTE!</span> Please note that you will be able to launch any free-to-play game
+									on Boosteroid, but for games marked as "payment required", you need to have a
+									purchased licensed copy from an official digital distributor (Steam/Epic/Origin).
+								</li>
+							</ul>
+						</div>
+
+						<div class="readon__box">
+							<h3 class="readon__box-title">What content should you create?</h3>
+							<ul class="readon__box-list">
+								<li class="readon__box-item">
+									It's totally up to you, what kind of content you want to publish about Boosteroid.
+									Our ecommendation is to start with a general review of the service. After that, you
+									can record gameplay videos, news, useful information, and so on.
+								</li>
+								<li class="readon__box-item">
+									We don’t have strict requirements on what you should or should not say about the
+									service, but we would like to kindly ask you to mention in your videos that the
+									experience with any cloud-gaming service, including Boosteroid, is highly dependent
+									on the connection and device of a particular user and may vary between different
+									people. That's why every user needs to check their connection with Boosteroid before
+									purchasing a subscription.
+								</li>
+								<li class="readon__box-item">
+									Also, please share with your subscribers that Boosteroid does not provide free
+									access to licensed games, that’s why games listed as "payment required" need to be
+									purchased in the official digital distribution store (Epic, Origin, Steam, etc.).
+								</li>
+							</ul>
+						</div>
+
+						<div class="readon__box">
+							<h3 class="readon__box-title">What kind of affiliation do we offer?</h3>
+							<ul class="readon__box-list">
+								<li class="readon__box-item">
+									When you register for our partners' program , you will be able to create referral
+									links to use together with your content about us. Every purchase made from this link
+									will bring 4,95 EUR to your account. After collecting 50 EUR or more, you will be
+									able to withdraw funds to your Paypal account. To link your PayPal account in
+									settings, fill in the Identifier field with your email that you registered your
+									PayPal with.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section> -->
+			<section class="rules">
+				<div class="container">
+					<h2 class="rules__title partner-page-subtitle js-scroll fade-in-down">What are the rules?
+					</h2>
+					<div class="rules__text">
+						<p class="rules__txt">
+							1. To be eligible for the competition, you need to be a <span
+								class="stupid_bold_text">Boosteroid active subscriber</span>. <br><br>
+							2. Record your gameplay on <span class="stupid_bold_text">Boosteroid desktop apps
+							</span>using the built-in Clip Recording feature <br><br>
+							3. Publish your videos on <span class="stupid_bold_text">YouTube, TikTok, Instagram,
+								Facebook or Twitter/X </span> open to the public with the hashtag <span
+								class="stupid_bold_text">#boosteroid_spotlight.</span> <br><br>
+							4. You can publish <span class="stupid_bold_text">as many spotlights as you want</span>,
+							each of your contributions will be counted during the final draw. <span
+								class="stupid_bold_text">More videos - more chances
+								of winning.</span>
+							<br><br>
+							5. Join our <span class="link-1">
+								<a href="https://discord.com/invite/qKjxDv9mNB" target="_blank">Discord</a></span> to
+							watch the <span class="stupid_bold_text">live giveaway event</span>
+							and see who the lucky winners are. <br><br>
+							6. If you win, expect a <span class="stupid_bold_text">DM from our team</span> on the social
+							media platform where you posted the videos.
+							<br><br>
+							7. In case the winner of the <span class="stupid_bold_text">GAMESCOM trip </span> cannot use
+							the prize, we will offer to <span class="stupid_bold_text">swap prizes</span> with the other
+							winners. If they do not agree, we will <span class="stupid_bold_text">redraw the prize
+							</span> on a new live stream.
+							<br><br>
+							8. <span class="stupid_bold_text">You cannot get </span> a money equivalent to the prize you
+							have won. <br><br>
+							9. The deadline to publish videos to take part in the giveaway is <span
+								class="stupid_bold_text"> Tuesday, July 30, 23:59 UTC.</span><br><br>
+							10. The winners will be announced during a live draw on <span
+								class="stupid_bold_text">Wednesday, July 31, 12:00 UTC</span> (all details can be found
+							on <span class="link-1">
+								<a href="https://discord.com/invite/qKjxDv9mNB" target="_blank">Discord</a></span>). <br>
+						</p>
+
+					</div>
+					<footer class="footer">
+						<a class="footer__link" href="mailto:support@boosteroid.com">support@boosteroid.com</a>
+						<p class="footer__reserved">Boosteroid 2024. All right reserved</p>
+					</footer>
+				</div>
+
+				<svg class="hidden-svg" xmlns="http://www.w3.org/2000/svg">
+					<symbol viewBox="0 0 240 240" id="freePart">
+						<path d="M115.315 154V92.56L122.035 99.28H101.875V86.8H130.867V154H115.315Z" fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M120 235C183.513 235 235 183.513 235 120C235 56.4873 183.513 5 120 5C56.4873 5 5 56.4873 5 120C5 183.513 56.4873 235 120 235ZM120 240C186.274 240 240 186.274 240 120C240 93.2095 231.221 68.4695 216.382 48.5C194.514 19.0691 159.484 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240Z"
+							fill="url(#paint0_linear_4292_4973)" />
+						<defs>
+							<linearGradient id="paint0_linear_4292_4973" x1="0" y1="123.228" x2="240" y2="123.228"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#00B2FF" />
+								<stop offset="1" stop-color="#5200FF" />
+							</linearGradient>
+						</defs>
+					</symbol>
+					<symbol viewBox="0 0 240 240" id="accessPart">
+						<path
+							d="M95.3554 154V143.92L121.275 119.44C123.323 117.584 124.827 115.92 125.787 114.448C126.747 112.976 127.387 111.632 127.707 110.416C128.091 109.2 128.283 108.08 128.283 107.056C128.283 104.368 127.355 102.32 125.499 100.912C123.707 99.4399 121.051 98.7039 117.531 98.7039C114.715 98.7039 112.091 99.2479 109.659 100.336C107.291 101.424 105.275 103.12 103.611 105.424L92.2834 98.1279C94.8434 94.2879 98.4274 91.2479 103.035 89.0079C107.643 86.7679 112.955 85.6479 118.971 85.6479C123.963 85.6479 128.315 86.4799 132.027 88.1439C135.803 89.7439 138.715 92.0159 140.763 94.9599C142.875 97.9039 143.931 101.424 143.931 105.52C143.931 107.696 143.643 109.872 143.067 112.048C142.555 114.16 141.467 116.4 139.803 118.768C138.203 121.136 135.835 123.792 132.699 126.736L111.195 146.992L108.219 141.328H146.139V154H95.3554Z"
+							fill="white" />
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M120 235C183.513 235 235 183.513 235 120C235 56.4873 183.513 5 120 5C56.4873 5 5 56.4873 5 120C5 183.513 56.4873 235 120 235ZM120 240C186.274 240 240 186.274 240 120C240 53.7258 186.274 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240Z"
+							fill="url(#paint0_linear_4340_4669)" />
+						<defs>
+							<linearGradient id="paint0_linear_4340_4669" x1="0" y1="123.228" x2="240" y2="123.228"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#00B2FF" />
+								<stop offset="1" stop-color="#5200FF" />
+							</linearGradient>
+						</defs>
+					</symbol>
+					<symbol viewBox="0 0 240 240" id="extraPart">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M120 235C183.513 235 235 183.513 235 120C235 56.4873 183.513 5 120 5C56.4873 5 5 56.4873 5 120C5 183.513 56.4873 235 120 235ZM120 240C186.274 240 240 186.274 240 120C240 53.7258 186.274 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240Z"
+							fill="url(#paint0_linear_4292_4958)" />
+						<path
+							d="M117.63 155.152C112.958 155.152 108.318 154.544 103.71 153.328C99.1018 152.048 95.1978 150.256 91.9978 147.952L98.0458 136.048C100.606 137.904 103.582 139.376 106.974 140.464C110.366 141.552 113.79 142.096 117.246 142.096C121.15 142.096 124.222 141.328 126.462 139.792C128.702 138.256 129.822 136.144 129.822 133.456C129.822 130.896 128.83 128.88 126.846 127.408C124.862 125.936 121.662 125.2 117.246 125.2H110.142V114.928L128.862 93.7121L130.59 99.28H95.3578V86.8H142.398V96.8801L123.774 118.096L115.902 113.584H120.414C128.67 113.584 134.91 115.44 139.134 119.152C143.358 122.864 145.47 127.632 145.47 133.456C145.47 137.232 144.478 140.784 142.494 144.112C140.51 147.376 137.47 150.032 133.374 152.08C129.278 154.128 124.03 155.152 117.63 155.152Z"
+							fill="white" />
+						<defs>
+							<linearGradient id="paint0_linear_4292_4958" x1="0" y1="123.228" x2="240" y2="123.228"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#00B2FF" />
+								<stop offset="1" stop-color="#5200FF" />
+							</linearGradient>
+						</defs>
+					</symbol>
+					<symbol viewBox="0 0 272 534" id="linePartner">
+						<circle cx="120" cy="120" r="117.5" stroke="url(#paint0_linear_4292_4958)" stroke-width="5" />
+						<path
+							d="M117.63 155.152C112.958 155.152 108.318 154.544 103.71 153.328C99.1018 152.048 95.1978 150.256 91.9978 147.952L98.0458 136.048C100.606 137.904 103.582 139.376 106.974 140.464C110.366 141.552 113.79 142.096 117.246 142.096C121.15 142.096 124.222 141.328 126.462 139.792C128.702 138.256 129.822 136.144 129.822 133.456C129.822 130.896 128.83 128.88 126.846 127.408C124.862 125.936 121.662 125.2 117.246 125.2H110.142V114.928L128.862 93.7121L130.59 99.28H95.3578V86.8H142.398V96.8801L123.774 118.096L115.902 113.584H120.414C128.67 113.584 134.91 115.44 139.134 119.152C143.358 122.864 145.47 127.632 145.47 133.456C145.47 137.232 144.478 140.784 142.494 144.112C140.51 147.376 137.47 150.032 133.374 152.08C129.278 154.128 124.03 155.152 117.63 155.152Z"
+							fill="white" />
+						<defs>
+							<linearGradient id="paint0_linear_4292_4958" x1="0" y1="123.228" x2="240" y2="123.228"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#2095D9" />
+								<stop offset="1" stop-color="#5C35EE" />
+							</linearGradient>
+						</defs>
+					</symbol>
+				</svg>
+
+			</section>
+			<!-- <section class="interested" id="interested">
+				<img class="circle" src="images/anim.svg" alt="background image" />
+
+				<div class="wrapper">
+					<main>
+						<section class="gamers">
+							<h2 class="gamers__title">Application form</h2>
+
+							<form method="POST" action="https://formspree.io/f/xoqzbagw" class="gamers__form"
+								target="_blank">
+								<p class="gamers__popup"></p>
+								<div class="gamers__request">
+									<svg>
+										<use href="images/check.svg#greenCheck"></use>
+									</svg>
+									<p class="gamers__request-title">Request sent!</p>
+								</div>
+
+
+								<div class="gamers__form-container">
+									<div class="gamers__form-email">
+										<input type="email" required placeholder="Your Boosteroid Email *"
+											name="email" />
+									</div>
+									<div class="gamers__form-alias">
+										<input type="text" required placeholder="Your Nickname for Giveaway*"
+											name="alias" />
+									</div>
+
+									<div class="custom-select" style="width:100%;">
+										<select required name="challenge">
+											<option value="0">Select a challenge:</option>
+											<option value="Demo Derby Challenge">Rocket League: "Demo Derby Challenge"
+											</option>
+											<option value="Flick Mastery Challenge">Rocket League: "Flick Mastery
+												Challenge"</option>
+											<option value="Pinch Shot Challenge">Rocket League: "Pinch Shot Challenge"
+											</option>
+											<option value="Hurdle Jump Challenge">Fall Guys: "Hurdle Jump Challenge"
+											</option>
+											<option value="Free Hugs Challenge">Fall Guys: "Free Hugs Challenge"
+											</option>
+											<option value="Perfect Hex-A-Gone Challenge">Fall Guys: "Perfect Hex-A-Gone
+												Challenge"</option>
+											<option value="Loot-N-Shoot Challenge">Fortnite : "Loot-N-Shoot Challenge"
+											</option>
+											<option value="Friendly Neighbor Challenge">Fortnite : "Friendly Neighbor
+												Challenge"</option>
+											<option value="Last Dance Challeng">Fortnite : "Last Dance Challeng"
+											</option>
+										</select>
+									</div>
+
+									<div class="gamers__form-link">
+										<input type="text" required placeholder="Link to Gameplay Video *"
+											name="link" />
+									</div>
+
+									<div class="gamers__form-checkgroup">
+										<input name="agree" type="checkbox" class="gamers__form-checked" id="agree"
+											required />
+										<label for="agree" class="gamers__form-for-checked">By clicking the button Send
+											you agree to our
+											<a target="_blank" href="https://boosteroid.com/privacy">Privacy Policy</a>
+											&
+											<a target="_blank" href="https://boosteroid.com/terms">Terms and
+												Conditions</a></label>
+										<input name="agree-2" type="checkbox" class="gamers__form-checked-2"
+											id="agree-2" required />
+										<label for="agree-2" class="gamers__form-for-checked-2">I agree that you will
+											use my email during the giveaway
+											live event, its recording and results announcement in case my
+											nickname is identical to another user's nickname</label>
+									</div>
+
+									<button disabled class="gamers__form-submit">SEND</button>
+								</div>
+							</form>
+						</section>
+					</main>
+
+					<footer class="footer">
+						<a class="footer__link" href="mailto:support@boosteroid.com">support@boosteroid.com</a>
+						<p class="footer__reserved">Boosteroid 2023. All right reserved</p>
+					</footer>
+				</div>
+
+			</section> -->
+			<script src="js/main.min.js"></script>
+			<!-- <script src="js/form.js"></script> -->
+</body>
+
+</html>

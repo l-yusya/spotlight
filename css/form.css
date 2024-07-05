@@ -1,0 +1,699 @@
+.gamers,
+.header {
+  text-align: center;
+}
+
+/* .gamers__subtitle,
+.gamers__title {
+  font-family: Montserrat;
+  text-transform: uppercase;
+} */
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url("../fonts/Cairo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-size: 1rem;
+  font-family: Roboto;
+  font-weight: 400;
+  background: #120b32;
+  color: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.circle {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-animation: 4s ease-out infinite pulsation;
+  animation: 4s ease-out infinite pulsation;
+}
+
+@-webkit-keyframes pulsation {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulsation {
+  0%,
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 0 30px;
+}
+
+.header {
+  padding: 50px 0;
+}
+
+.header__link {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.header__logo {
+  width: 300px;
+  height: 23px;
+}
+
+.gamers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.gamers__title {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  /* width: 530px;
+  height: 74px; */
+  /* left: 694px;
+  top: 6845px; */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+  /* identical to box height */
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/* .gamers__subtitle {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px
+} */
+
+.gamers__form {
+  width: 100%;
+  position: relative;
+  /* margin-top: 50px; */
+}
+
+.gamers__form-title {
+  color: #9b99ad;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.gamers__form-for-checked a,
+.gamers__form-title a {
+  color: #00a3ff;
+}
+
+.gamers__form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gamers__form-alias,
+.gamers__form-link,
+.gamers__form-email {
+  margin-bottom: 20px;
+}
+
+.gamers__form-alias input,
+.gamers__form-link input,
+.gamers__form-email input {
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  background: rgba(155, 153, 173, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  color: #fff;
+}
+
+.gamers__form-email input::-webkit-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-email input::-moz-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-email input:-ms-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-email input::-ms-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-email input::placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input::-webkit-input-placeholder {
+  color: #9b99ad;
+}
+.gamers__form-link input::-webkit-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input::-moz-placeholder {
+  color: #9b99ad;
+}
+.gamers__form-link input::-moz-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input:-ms-input-placeholder {
+  color: #9b99ad;
+}
+.gamers__form-link input:-ms-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input::-ms-input-placeholder {
+  color: #9b99ad;
+}
+.gamers__form-link input::-ms-input-placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input::placeholder {
+  color: #9b99ad;
+}
+.gamers__form-link input::placeholder {
+  color: #9b99ad;
+}
+
+.gamers__form-alias input:focus,
+.gamers__form-link input:focus,
+.gamers__form-checked-2:focus + label::before,
+.gamers__form-checked:focus + label::before,
+.gamers__form-email input:focus {
+  -webkit-box-shadow: 0 0 0 1px #9b99ad;
+  box-shadow: 0 0 0 1px #9b99ad;
+}
+
+.gamers__form-checkgroup {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.gamers__form-checked,
+.gamers__form-checked-2 {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  
+}
+
+.gamers__form-for-checked,
+.gamers__form-for-checked-2 {
+  margin-top: 15px;
+}
+
+.gamers__form-checked-2:checked + label::after,
+.gamers__form-checked:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  height: 7px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.gamers__form-for-checked,
+.gamers__form-for-checked-2 {
+  display: inline-block;
+  font-family: Cairo;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 30px;
+  position: relative;
+}
+
+.gamers__form-for-checked-2::before,
+.gamers__form-for-checked::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(155, 153, 173, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gamers__form-submit {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f5263c),
+    to(#6a129f)
+  );
+  background: linear-gradient(90deg, #f5263c 0, #6a129f 100%);
+  border-radius: 5px;
+  width: 100%;
+  height: 65px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.gamers__form-submit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.gamers__popup {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: #dc143c;
+  font-size: 24px;
+}
+
+.gamers__request {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  max-width: 280px;
+  padding: 30px 35px 20px;
+  background: #151923;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.gamers__request svg {
+  width: 60px;
+  height: 60px;
+  fill: #16c75e;
+}
+
+.gamers__request-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 15px 0;
+}
+
+.gamers__request-txt {
+  color: #9b99ad;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer__link {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 425px) {
+  .gamers__request {
+    padding: 50px 55px 40px;
+    max-width: 400px;
+  }
+  .gamers__request-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 830px) {
+  .header {
+    padding: 30px 0;
+  }
+  .header__logo {
+    width: 200px;
+    height: 18px;
+  }
+  .gamers__title {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+  .gamers__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .gamers__form-title {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .gamers__form-alias input,
+  .gamers__form-link input,
+  .gamers__form-email input {
+    font-size: 14px;
+    height: 50px;
+  }
+  .gamers__form-checkgroup {
+    margin-bottom: 20px;
+  }
+  .gamers__form-checked-2:checked + label::after,
+  .gamers__form-checked:checked + label::after {
+    width: 10px;
+    height: 5px;
+  }
+  .gamers__form-for-checked,
+  .gamers__form-for-checked-2 {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 25px;
+  }
+  .gamers__form-for-checked-2::before,
+  .gamers__form-for-checked::before {
+    width: 16px;
+    height: 16px;
+  }
+  .gamers__form-for-checked,
+  .gamers__form-for-checked-2 {
+    margin-top: 5px;
+  }
+  .gamers__form-submit {
+    font-size: 20px;
+    height: 55px;
+  }
+  .footer {
+    font-size: 14px;
+    padding: 30px 0;
+  }
+}
+
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    overflow-y: visible;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element: */
+  }
+  
+  .select-selected {
+    background-color: rgba(155, 153, 173, 0.15);
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 24px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #9b99ad transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 14px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div {
+    width: 100%;
+    height:40px;
+    padding: 13px 20px 12px;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+  }
+
+.select-selected {
+    color: #9b99ad;
+    width: 100%;
+    height: 55px;
+    padding: 20px 20px;
+    cursor: pointer;
+    text-align: left;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    margin-bottom: 20px;
+    font-size: 17px;
+    
+  }
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: #151923;
+    color: #fff;
+    top: 100%;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #0b0d13;
+  }
